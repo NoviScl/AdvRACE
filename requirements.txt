@@ -1,0 +1,9 @@
+apex==0.1
+benepar==0.1.2
+nltk==3.4.5
+spacy=2.2.4
+keras==2.3.1
+numpy==1.17.2
+torch==1.2.0
+tqdm==4.43.0
+transformers==2.3.0

@@ -1,0 +1,10 @@
+( ROOT ( S ( NP ) ( VP ) ( . ) ) ) EOP
+( ROOT ( S ( PP ) ( , ) ( NP ) ( VP ) ( . ) ) ) EOP
+( ROOT ( S ( SBAR ) ( , ) ( NP ) ( VP ) ( . ) ) ) EOP
+( ROOT ( S ( S ) ( , ) ( CC ) ( S ) ( . ) ) ) EOP
+( ROOT ( S ( VP ) ( . ) ) ) EOP
+( ROOT ( S ( NP ) ( ADVP ) ( VP ) ( . ) ) ) EOP
+( ROOT ( S ( ADVP ) ( , ) ( NP ) ( VP ) ( . ) ) ) EOP
+( ROOT ( S ( CC ) ( NP ) ( VP ) ( . ) ) ) EOP
+( ROOT ( S ( ADVP ) ( NP ) ( VP ) ( . ) ) ) EOP
+( ROOT ( S ( NP ) ( VP ) ( . ) ( '' ) ) ) EOP

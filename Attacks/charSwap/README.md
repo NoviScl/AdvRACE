@@ -1,0 +1,1 @@
+To construct the charSwap attack, you can use the charAttack.py script to generate the attacks on the train/dev/test sets. You may need to change the dataset directory in the script accordingly.
