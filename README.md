@@ -1,18 +1,16 @@
-## AdvRACE: Benchmarking Robustness of Machine Reading Comprehension Models
+# AdvRACE: Benchmarking Robustness of Machine Reading Comprehension Models
 
-arXiv link: https://arxiv.org/abs/2004.14004
-
-This repo contains the constructed datasets as well as the source codes for adversarial attack generation and model evaluation. 
+This is the repo containing the processed data and also the code for reproducing the experiments in our paper: Benchmarking Robustness of Machine Reading Comprehension Models. ([arxiv](https://arxiv.org/abs/2004.14004)). ACL 2021 (Findings).
 
 
-### Dependencies
+## Dependencies
 
 Required dependencies are in the requirements.txt file:
 ```
 pip install requirements.txt
 ```
 
-### AdvRACE Datasets
+## AdvRACE Datasets
 
 There are four adversarial test sets in the AdvRACE benchmark: AddSent, CharSwap, Distractor Extraction (DE) and Distractor Generation (DG). They are in the `final_distractor_datasets` directory. We have also included the original RACE test set (high+middle) in the same directory for easy access. You can evaluate your models on these test sets for robustness comparison.
 
@@ -21,7 +19,7 @@ The adversarial test sets are all stored in json format, named as `test_dis.json
 In addition, we also provide the other two adversarial test sets that did not pass our human evaluation: papaphrase and wordReplace. Ther are in the `ununsed_datasets` directory, in case you are interested. We do not use them for model evaluation due to the relatively poor quality.
 
 
-### Adversarial Attack Construction
+## Adversarial Attack Construction
 
 To facilitate future work, we also release the codes for constructing the adversarial attacks in the `Attacks` directory.
 
@@ -35,7 +33,7 @@ WordReplace - from Yuan Zang et al.'s work: https://github.com/thunlp/SememePSO-
 
 
 
-### Training and Evaluation 
+## Training and Evaluation 
 
 We were using Huggingface's Transformers (2.3.0) and we provide and corresponding training and evaluation scripts that we used.
 
@@ -53,9 +51,20 @@ After you have trained your own model, you can then evaluate on the original RAC
 sh run_testing.sh
 ```
 
-### Leaderboard 
+## Reference
 
-We don't have a leaderboard for now, but we will consider setting up one in the future when there are more results on AdvRACE. Before that, feel free to submit a pull request to submit your results onto this page so that other people working on it can also keep track of the progress.
+Please consider citing our work if you found this code or our paper beneficial to your research.
 
-(TODO: Add our results, CharBERT results, and maybe PQ-AT's results on AdvRACE here.)
+```
+@inproceedings{Si2020BenchmarkingRO,
+  title={Benchmarking Robustness of Machine Reading Comprehension Models},
+  author={Chenglei Si and Ziqing Yang and Yiming Cui and Wentao Ma and Ting Liu and Shijin Wang},
+  booktitle={Findings of ACL},
+  year={2021},
+}
+```
+
+
+If you encounter any problems, feel free to raise them in issues or contact the authors.
+
 
